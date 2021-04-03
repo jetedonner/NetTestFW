@@ -10,6 +10,22 @@
 		55563D732616796A00E89323 /* NetTestFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55563D692616796A00E89323 /* NetTestFW.framework */; };
 		55563D782616796A00E89323 /* NetTestFWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563D772616796A00E89323 /* NetTestFWTests.swift */; };
 		55563D7A2616796A00E89323 /* NetTestFW.h in Headers */ = {isa = PBXBuildFile; fileRef = 55563D6C2616796A00E89323 /* NetTestFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55563DEC2617B79F00E89323 /* NetworkHelperExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563DE82617B79F00E89323 /* NetworkHelperExt.swift */; };
+		55563DED2617B79F00E89323 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563DE92617B79F00E89323 /* NetworkHelper.swift */; };
+		55563DFF2617B7BC00E89323 /* TurnNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563DFC2617B7BC00E89323 /* TurnNetworkData.swift */; };
+		55563E002617B7BC00E89323 /* NetworkDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563DFE2617B7BC00E89323 /* NetworkDataTypes.swift */; };
+		55563E062617B7CB00E89323 /* LevelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563DF92617B7BC00E89323 /* LevelConfiguration.swift */; };
+		55563E092617B7D300E89323 /* LevelSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563DF62617B7BC00E89323 /* LevelSize.swift */; };
+		55563E0A2617B7D300E89323 /* LightTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563DF52617B7BC00E89323 /* LightTypes.swift */; };
+		55563E0B2617B7D300E89323 /* FloorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563DF82617B7BC00E89323 /* FloorType.swift */; };
+		55563E0C2617B7D300E89323 /* MatchDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563DF72617B7BC00E89323 /* MatchDuration.swift */; };
+		55563E0D2617B7D300E89323 /* LevelDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563DFA2617B7BC00E89323 /* LevelDifficulty.swift */; };
+		55563E0E2617B7D300E89323 /* SkyboxType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563DF42617B7BC00E89323 /* SkyboxType.swift */; };
+		55563E1A2617B7E200E89323 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563E192617B7E200E89323 /* Extensions.swift */; };
+		55563E452618E36100E89323 /* BaseNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563E412618E30600E89323 /* BaseNetworkData.swift */; };
+		55563E462618E36100E89323 /* EndMatchNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563E402618E30600E89323 /* EndMatchNetworkData.swift */; };
+		55563E472618E36100E89323 /* LoadLevelNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563E422618E30600E89323 /* LoadLevelNetworkData.swift */; };
+		55C122192618EFBC001E8E3F /* InitMatchNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C122182618EFBC001E8E3F /* InitMatchNetworkData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +45,22 @@
 		55563D722616796A00E89323 /* NetTestFWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetTestFWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55563D772616796A00E89323 /* NetTestFWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetTestFWTests.swift; sourceTree = "<group>"; };
 		55563D792616796A00E89323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55563DE82617B79F00E89323 /* NetworkHelperExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelperExt.swift; sourceTree = "<group>"; };
+		55563DE92617B79F00E89323 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		55563DF42617B7BC00E89323 /* SkyboxType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyboxType.swift; sourceTree = "<group>"; };
+		55563DF52617B7BC00E89323 /* LightTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTypes.swift; sourceTree = "<group>"; };
+		55563DF62617B7BC00E89323 /* LevelSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSize.swift; sourceTree = "<group>"; };
+		55563DF72617B7BC00E89323 /* MatchDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDuration.swift; sourceTree = "<group>"; };
+		55563DF82617B7BC00E89323 /* FloorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorType.swift; sourceTree = "<group>"; };
+		55563DF92617B7BC00E89323 /* LevelConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelConfiguration.swift; sourceTree = "<group>"; };
+		55563DFA2617B7BC00E89323 /* LevelDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDifficulty.swift; sourceTree = "<group>"; };
+		55563DFC2617B7BC00E89323 /* TurnNetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnNetworkData.swift; sourceTree = "<group>"; };
+		55563DFE2617B7BC00E89323 /* NetworkDataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataTypes.swift; sourceTree = "<group>"; };
+		55563E192617B7E200E89323 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		55563E402618E30600E89323 /* EndMatchNetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndMatchNetworkData.swift; sourceTree = "<group>"; };
+		55563E412618E30600E89323 /* BaseNetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkData.swift; sourceTree = "<group>"; };
+		55563E422618E30600E89323 /* LoadLevelNetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadLevelNetworkData.swift; sourceTree = "<group>"; };
+		55C122182618EFBC001E8E3F /* InitMatchNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitMatchNetworkData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +103,11 @@
 		55563D6B2616796A00E89323 /* NetTestFW */ = {
 			isa = PBXGroup;
 			children = (
+				55563E4A2618E36F00E89323 /* System */,
+				55563E3C2618E2DA00E89323 /* Types */,
+				55563E3F2618E2EC00E89323 /* Messages */,
+				55563DE92617B79F00E89323 /* NetworkHelper.swift */,
+				55563DE82617B79F00E89323 /* NetworkHelperExt.swift */,
 				55563D6C2616796A00E89323 /* NetTestFW.h */,
 				55563D6D2616796A00E89323 /* Info.plist */,
 			);
@@ -84,6 +121,41 @@
 				55563D792616796A00E89323 /* Info.plist */,
 			);
 			path = NetTestFWTests;
+			sourceTree = "<group>";
+		};
+		55563E3C2618E2DA00E89323 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				55563DFE2617B7BC00E89323 /* NetworkDataTypes.swift */,
+				55563DF92617B7BC00E89323 /* LevelConfiguration.swift */,
+				55563DF42617B7BC00E89323 /* SkyboxType.swift */,
+				55563DF52617B7BC00E89323 /* LightTypes.swift */,
+				55563DF62617B7BC00E89323 /* LevelSize.swift */,
+				55563DF72617B7BC00E89323 /* MatchDuration.swift */,
+				55563DF82617B7BC00E89323 /* FloorType.swift */,
+				55563DFA2617B7BC00E89323 /* LevelDifficulty.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		55563E3F2618E2EC00E89323 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				55563E412618E30600E89323 /* BaseNetworkData.swift */,
+				55563E422618E30600E89323 /* LoadLevelNetworkData.swift */,
+				55563DFC2617B7BC00E89323 /* TurnNetworkData.swift */,
+				55563E402618E30600E89323 /* EndMatchNetworkData.swift */,
+				55C122182618EFBC001E8E3F /* InitMatchNetworkData.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		55563E4A2618E36F00E89323 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				55563E192617B7E200E89323 /* Extensions.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +219,7 @@
 				TargetAttributes = {
 					55563D682616796A00E89323 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					55563D712616796A00E89323 = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +267,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55563E452618E36100E89323 /* BaseNetworkData.swift in Sources */,
+				55563E462618E36100E89323 /* EndMatchNetworkData.swift in Sources */,
+				55563E472618E36100E89323 /* LoadLevelNetworkData.swift in Sources */,
+				55563DEC2617B79F00E89323 /* NetworkHelperExt.swift in Sources */,
+				55563DFF2617B7BC00E89323 /* TurnNetworkData.swift in Sources */,
+				55563E0B2617B7D300E89323 /* FloorType.swift in Sources */,
+				55563E062617B7CB00E89323 /* LevelConfiguration.swift in Sources */,
+				55563DED2617B79F00E89323 /* NetworkHelper.swift in Sources */,
+				55563E1A2617B7E200E89323 /* Extensions.swift in Sources */,
+				55563E0E2617B7D300E89323 /* SkyboxType.swift in Sources */,
+				55C122192618EFBC001E8E3F /* InitMatchNetworkData.swift in Sources */,
+				55563E002617B7BC00E89323 /* NetworkDataTypes.swift in Sources */,
+				55563E092617B7D300E89323 /* LevelSize.swift in Sources */,
+				55563E0C2617B7D300E89323 /* MatchDuration.swift in Sources */,
+				55563E0D2617B7D300E89323 /* LevelDifficulty.swift in Sources */,
+				55563E0A2617B7D300E89323 /* LightTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +429,7 @@
 		55563D7E2616796A00E89323 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -354,9 +444,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.kimhauser.swift.NetTestFW;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +456,7 @@
 		55563D7F2616796A00E89323 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -378,6 +471,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.kimhauser.swift.NetTestFW;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -388,6 +482,7 @@
 		55563D812616796A00E89323 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = PB7SHXTJHG;
@@ -406,6 +501,7 @@
 		55563D822616796A00E89323 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = PB7SHXTJHG;
