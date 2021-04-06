@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum LevelDifficulty:Int, Codable {
+public enum LevelDifficulty:Int, Codable {
     case Tutorial =     1 //"Tutorial"
     case Easy =         2 //"Easy"
     case Medium =       3 //"Medium"
@@ -16,7 +16,7 @@ enum LevelDifficulty:Int, Codable {
     case Nightmare =    5 //"Nightmare"
     case Unreal =       6 //"Unreal"
     
-    func toString()->String{
+    public func toString()->String{
         switch self {
         case .Tutorial:
             return "Tutorial"
@@ -33,7 +33,7 @@ enum LevelDifficulty:Int, Codable {
         }
     }
     
-    static func levelDifficulty(fromString:String)->LevelDifficulty{
+    public static func levelDifficulty(fromString:String)->LevelDifficulty{
         switch fromString {
         case "Tutorial":
             return .Tutorial

@@ -19,19 +19,14 @@ public struct LevelEnvironment: Codable{
     public var skyBoxType:SkyboxType = .GreenSky
     
     public var matchDuration:MatchDuration = .Minutes_2
+    public var levelDifficulty:LevelDifficulty = .Easy
+    public var lightIntensity:LightIntensity = .normal
 }
 
 public class LevelConfiguration: NSObject, Codable {
     
-//    var humanPlayerCount:Int =  2
-//    var aiPlayerCount:Int =     0
-//    var droidPlayerCount:Int =  0
-//
-//    var levelSize:LevelSize =   .ExtraSmall
-//    var floorType:FloorType =   .Metallic
-//    var skyBoxType:SkyboxType = .GreenSky
+    public var levelEnv:LevelEnvironment = LevelEnvironment(levelSize: .Medium, floorType: .Grass, skyBoxType: .PinkSunrise, matchDuration: .Minutes_2, levelDifficulty: .Unreal, lightIntensity: .noLight)
     
-    public var levelEnv:LevelEnvironment = LevelEnvironment(levelSize: .Medium, floorType: .Grass, skyBoxType: .PinkSunrise, matchDuration: .Minutes_2)
     public var levelPlayers:LevelPlayers = LevelPlayers(humanPlayerCount: 3, aiPlayerCount: 1, droidPlayerCount: 2)
     
     public init(levelEnv:LevelEnvironment, levelPLayers:LevelPlayers) {
@@ -39,11 +34,4 @@ public class LevelConfiguration: NSObject, Codable {
         self.levelEnv = levelEnv
         self.levelPlayers = levelPLayers
     }
-    
-//    init(levelSize:LevelSize = .ExtraSmall, floorType:FloorType = .Metallic, skyBoxType:SkyboxType = .GreenSky) {
-//        super.init()
-//        self.levelSize = levelSize
-//        self.floorType = floorType
-//        self.skyBoxType = skyBoxType
-//    }
 }

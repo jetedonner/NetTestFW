@@ -9,7 +9,7 @@
 import Foundation
 import SceneKit
 
-enum LightIntensity:Float, Codable {
+public enum LightIntensity:Float, Codable {
     case noLight =  0.0
     case low =      250.0
     case medium =   400.0
@@ -17,7 +17,7 @@ enum LightIntensity:Float, Codable {
     case high =     3000.0
     case veryHigh = 4500.0
     
-    static func lightIntensity(from:String)->LightIntensity{
+    public static func lightIntensity(from:String)->LightIntensity{
         switch from {
         case "NoLight":
             return .noLight
