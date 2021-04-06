@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct LevelPlayers: Codable{
+public struct LevelPlayers: Codable{
     var humanPlayerCount:Int =  2
     var aiPlayerCount:Int =     0
     var droidPlayerCount:Int =  0
 }
 
-struct LevelEnvironment: Codable{
+public struct LevelEnvironment: Codable{
     var levelSize:LevelSize =   .ExtraSmall
     var floorType:FloorType =   .Metallic
     var skyBoxType:SkyboxType = .GreenSky
@@ -21,7 +21,7 @@ struct LevelEnvironment: Codable{
     var matchDuration:MatchDuration = .Minutes_2
 }
 
-class LevelConfiguration: NSObject, Codable {
+public class LevelConfiguration: NSObject, Codable {
     
 //    var humanPlayerCount:Int =  2
 //    var aiPlayerCount:Int =     0
@@ -31,10 +31,10 @@ class LevelConfiguration: NSObject, Codable {
 //    var floorType:FloorType =   .Metallic
 //    var skyBoxType:SkyboxType = .GreenSky
     
-    var levelEnv:LevelEnvironment = LevelEnvironment(levelSize: .Medium, floorType: .Grass, skyBoxType: .PinkSunrise, matchDuration: .Minutes_2)
-    var levelPlayers:LevelPlayers = LevelPlayers(humanPlayerCount: 3, aiPlayerCount: 1, droidPlayerCount: 2)
+    public var levelEnv:LevelEnvironment = LevelEnvironment(levelSize: .Medium, floorType: .Grass, skyBoxType: .PinkSunrise, matchDuration: .Minutes_2)
+    public var levelPlayers:LevelPlayers = LevelPlayers(humanPlayerCount: 3, aiPlayerCount: 1, droidPlayerCount: 2)
     
-    init(levelEnv:LevelEnvironment, levelPLayers:LevelPlayers) {
+    public init(levelEnv:LevelEnvironment, levelPLayers:LevelPlayers) {
         super.init()
         self.levelEnv = levelEnv
         self.levelPlayers = levelPLayers

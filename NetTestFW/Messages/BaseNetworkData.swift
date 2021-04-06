@@ -10,8 +10,8 @@ import Foundation
 public class BaseNetworkData: Codable {
     
 //    var id:UUID = UUID()
-    var id:Int = -1
-    var msgType:MsgType = .initMsg
+    public var id:Int = -1
+    public var msgType:MsgType = .initMsg
     
     private enum CodingKeys: String, CodingKey {
         case id

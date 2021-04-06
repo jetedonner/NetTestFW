@@ -10,8 +10,8 @@ import SceneKit
 
 public class TurnNetworkData: BaseNetworkData {
     
-    var turnDir:TurnDir = .Straight
-    var position:SCNVector3 = SCNVector3(1, 0, -8)
+    public var turnDir:TurnDir = .Straight
+    public var position:SCNVector3 = SCNVector3(1, 0, -8)
     
     public init(id:Int){
         super.init(id: id, msgType: .turnMsg)

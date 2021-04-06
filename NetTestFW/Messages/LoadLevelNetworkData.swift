@@ -9,7 +9,7 @@ import Foundation
 
 public class LoadLevelNetworkData: BaseNetworkData {
     
-    var levelConfig:LevelConfiguration!
+    public var levelConfig:LevelConfiguration!
     
     public init(id: Int) {
         super.init(id: id, msgType: .initLevelMsg)
