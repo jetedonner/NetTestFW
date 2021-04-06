@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BaseNetworkData: Codable {
+public class BaseNetworkData: Codable {
     
 //    var id:UUID = UUID()
     var id:Int = -1
@@ -23,12 +23,12 @@ class BaseNetworkData: Codable {
 //        self.msgType = msgType
 //    }
 
-    init(id:Int, msgType:MsgType) {
+    public init(id:Int, msgType:MsgType) {
         self.id = id
         self.msgType = msgType
     }
     
-    required init(from decoder: Decoder) throws {
+    required public init(from decoder: Decoder) throws {
 
         let container = try decoder.container(keyedBy: CodingKeys.self)
 //        id = try container.decode(UUID.self, forKey: .id)
@@ -37,7 +37,7 @@ class BaseNetworkData: Codable {
 
     }
 
-    func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: Encoder) throws {
 
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(id, forKey: .id)

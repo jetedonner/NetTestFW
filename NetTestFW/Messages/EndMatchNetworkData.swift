@@ -7,13 +7,13 @@
 
 import Foundation
 
-class EndMatchNetworkData: BaseNetworkData {
+public class EndMatchNetworkData: BaseNetworkData {
     
-    init(id:Int) {
+    public init(id:Int) {
         super.init(id: id, msgType: .endMatchMsg)
     }
     
-    required init(from decoder: Decoder) throws {
+    public required init(from decoder: Decoder) throws {
         try super.init(from: decoder)
     }
 }

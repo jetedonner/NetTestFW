@@ -8,12 +8,12 @@
 import Foundation
 import SceneKit
 
-class TurnNetworkData: BaseNetworkData {
+public class TurnNetworkData: BaseNetworkData {
     
     var turnDir:TurnDir = .Straight
     var position:SCNVector3 = SCNVector3(1, 0, -8)
     
-    init(id:Int){
+    public init(id:Int){
         super.init(id: id, msgType: .turnMsg)
         self.turnDir = .Left
         self.position = SCNVector3(-6, 0, 3)
@@ -24,7 +24,7 @@ class TurnNetworkData: BaseNetworkData {
         case position
     }
 
-    required init(from decoder: Decoder) throws {
+    public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         try super.init(from: decoder)
 
@@ -32,7 +32,7 @@ class TurnNetworkData: BaseNetworkData {
         self.position = try container.decode(SCNVector3.self, forKey: .position)
     }
 
-    override func encode(to encoder: Encoder) throws {
+    public override func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(self.turnDir, forKey: .turnDir)
         try container.encode(self.position, forKey: .position)

@@ -46,7 +46,7 @@ public class NetworkHelper: NSObject, GKLocalPlayerListener {
         print("\n =====  NetTest END  ===== \n")
     }
     
-    func receiveAndDecode(data:Data){
+    public func receiveAndDecode(data:Data)->BaseNetworkData{
         print("\n ----- DECODED ----- ")
         let decoder:JSONDecoder = JSONDecoder()
         let newObjectSuper:BaseNetworkData = try! decoder.decode(BaseNetworkData.self, from: data)
@@ -60,20 +60,23 @@ public class NetworkHelper: NSObject, GKLocalPlayerListener {
             print("newObject.environment.floorType: \(newObject.levelConfig.levelEnv.floorType.toString())")
             print("newObject.environment.skyBoxType: \(newObject.levelConfig.levelEnv.skyBoxType.toString())")
             print("newObject.environment.matchDuration: \(newObject.levelConfig.levelEnv.matchDuration.toString())")
-            
+            return newObject
         }else if(newObjectSuper.msgType == .turnMsg){
             let newObject:TurnNetworkData = try! decoder.decode(TurnNetworkData.self, from: data)
             print("newObject.turnDir: \(newObject.turnDir)")
             print("newObject.position: \(newObject.position)")
-            
+            return newObject
         }else if(newObjectSuper.msgType == .initMsg){
             let newObject:BaseNetworkData = try! decoder.decode(BaseNetworkData.self, from: data)
             print("newObject.id: \(newObject.id)")
             print("newObject.msgType: \(newObject.msgType)")
+            return newObject
         }else if(newObjectSuper.msgType == .endMatchMsg){
             let newObject:EndMatchNetworkData = try! decoder.decode(EndMatchNetworkData.self, from: data)
             print("newObject.id: \(newObject.id)")
             print("newObject.msgType: \(newObject.msgType)")
+            return newObject
         }
+        return newObjectSuper
     }
 }
