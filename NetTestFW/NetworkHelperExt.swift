@@ -36,13 +36,29 @@ extension NetworkHelper{
 //        }
 //    }
 //    
-    func encodeAndSend(netData:BaseNetworkData)->Data?{
+    public func encodeAndSend(netData:BaseNetworkData)->Data?{
         print(" ----- ENCODED ----- ")
         do{
             let encoder:JSONEncoder = JSONEncoder()
             if(self.dbgMode){
                 encoder.outputFormatting = .prettyPrinted
             }
+            let encData:Data = try encoder.encode(netData)
+            print(String(data: encData, encoding: .utf8)!)
+            return encData
+        }catch{
+            print("Could not encode netData!")
+        }
+        return nil
+    }
+    
+    public static func encodeAndSend(netData:BaseNetworkData)->Data?{
+        print(" ----- ENCODED ----- ")
+        do{
+            let encoder:JSONEncoder = JSONEncoder()
+//            if(self.dbgMode){
+//                encoder.outputFormatting = .prettyPrinted
+//            }
             let encData:Data = try encoder.encode(netData)
             print(String(data: encData, encoding: .utf8)!)
             return encData
