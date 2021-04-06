@@ -8,17 +8,17 @@
 import Foundation
 
 public struct LevelPlayers: Codable{
-    var humanPlayerCount:Int =  2
-    var aiPlayerCount:Int =     0
-    var droidPlayerCount:Int =  0
+    public var humanPlayerCount:Int =  2
+    public var aiPlayerCount:Int =     0
+    public var droidPlayerCount:Int =  0
 }
 
 public struct LevelEnvironment: Codable{
-    var levelSize:LevelSize =   .ExtraSmall
-    var floorType:FloorType =   .Metallic
-    var skyBoxType:SkyboxType = .GreenSky
+    public var levelSize:LevelSize =   .ExtraSmall
+    public var floorType:FloorType =   .Metallic
+    public var skyBoxType:SkyboxType = .GreenSky
     
-    var matchDuration:MatchDuration = .Minutes_2
+    public var matchDuration:MatchDuration = .Minutes_2
 }
 
 public class LevelConfiguration: NSObject, Codable {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SkyboxType:Int, Codable {
+public enum SkyboxType:Int, Codable {
     
     case GreenSky =     1 //"Green sky"
     case PinkSunrise =  2 //"Pink sunrise"
@@ -30,16 +30,16 @@ enum SkyboxType:Int, Codable {
         }
     }
     
-    static var allSkyboxes: [SkyboxType] {
+    public static var allSkyboxes: [SkyboxType] {
         return [.GreenSky, .PinkSunrise, .RedGalaxy, .YellowGalaxy]
     }
     
-    static func random() -> SkyboxType {
+    public static func random() -> SkyboxType {
         let randomIndex = Int(arc4random()) % self.allSkyboxes.count
         return self.allSkyboxes[randomIndex]
     }
     
-    static func getSkybox(type:SkyboxType)->[String]{
+    public static func getSkybox(type:SkyboxType)->[String]{
         if(type == .RedGalaxy){
             return ["SkyRed_left_1024x1024", "SkyRed_right_1024x1024", "SkyRed_top_1024x1024", "SkyRed_bottom_1024x1024", "SkyRed_back_1024x1024", "SkyRed_front_1024x1024"]
         }else if(type == .YellowGalaxy){

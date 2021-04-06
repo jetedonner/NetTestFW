@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum FloorType:Int, Codable {
+public enum FloorType:Int, Codable {
     case Sand =  1 //"art.scnassets/textures/floors/desert_sand_floor_512x512.png"
     case Grass = 2 //"art.scnassets/textures/floors/grass_floor_512x512.png"
     case Space = 3 //"art.scnassets/textures/floors/space_glowing_plate_floor_512x512.png"
@@ -21,7 +21,7 @@ enum FloorType:Int, Codable {
     
     case RandomFloor = 10 //"A random floor texture"
     
-    func toString()->String{
+    public func toString()->String{
         switch self {
         case .Sand:
             return "art.scnassets/textures/floors/desert_sand_floor_512x512.png"
@@ -46,11 +46,11 @@ enum FloorType:Int, Codable {
         }
     }
     
-    static var allFloors: [FloorType] {
+    public static var allFloors: [FloorType] {
         return [.Sand, .Grass, .Space, .Stone, .Debug, .Bricks, .GreenMotherboard, .Metallic, .Patina]
     }
     
-    static func random() -> FloorType {
+    public static func random() -> FloorType {
         let randomIndex = Int(arc4random()) % self.allFloors.count
         return self.allFloors[randomIndex]
     }

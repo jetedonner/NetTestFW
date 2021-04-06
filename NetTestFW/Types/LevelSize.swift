@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum LevelSize:Int, Codable {
+public enum LevelSize:Int, Codable {
     case ExtraSmall = 1//  "10,10"
     case Small =      2//  "20,20"
     case Medium =     3//  "30,30"
@@ -19,7 +19,7 @@ enum LevelSize:Int, Codable {
 //        NSSize.convertFromStringLiteral(value: self.rawValue)
 //    }
     
-    func toString()->String{
+    public func toString()->String{
         switch self {
         case .ExtraSmall:
             return "10,10"
@@ -36,7 +36,7 @@ enum LevelSize:Int, Codable {
         }
     }
     
-    static func levelSize(fromString:String)->LevelSize{
+    public static func levelSize(fromString:String)->LevelSize{
         switch fromString {
         case "10x10":
             return .ExtraSmall

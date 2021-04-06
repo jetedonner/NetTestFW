@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum MatchDuration:TimeInterval, Codable{
+public enum MatchDuration:TimeInterval, Codable{
     case Infinite = 9999999999.99999
     case Seconds_10 = 10.0
     case Seconds_30 = 30.0
@@ -22,7 +22,7 @@ enum MatchDuration:TimeInterval, Codable{
     case Minutes_12 = 720.0
     case Minutes_15 = 900.0
     
-    func toString()->String{
+    public func toString()->String{
         switch self {
         case .Infinite:
             return  "Infinite ∞"
@@ -51,7 +51,7 @@ enum MatchDuration:TimeInterval, Codable{
         }
     }
     
-    static func matchDuration(fromString:String)->MatchDuration{
+    public static func matchDuration(fromString:String)->MatchDuration{
         switch fromString {
         case "Infinite ∞":
             return .Infinite

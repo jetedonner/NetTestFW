@@ -13,7 +13,7 @@ extension Notification.Name {
   static let authenticationChanged =    Notification.Name(rawValue: "authenticationChanged")
 }
 
-public class NetworkHelper: NSObject, GKLocalPlayerListener {
+public class NetworkHelper: NSObject {
     
     let dbgMode:Bool = false
     
