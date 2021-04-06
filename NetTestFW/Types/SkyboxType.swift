@@ -15,7 +15,7 @@ public enum SkyboxType:Int, Codable {
     case YellowGalaxy = 4 //"Yellow galaxy"
     case RandomSkyBox = 5 //"A random skybox"
     
-    func toString()->String{
+    public func toString()->String{
         switch self {
         case .GreenSky:
             return "Green sky"

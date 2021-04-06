@@ -18,6 +18,9 @@ public enum LevelSize:Int, Codable {
 //    func getNSSize()->NSSize{
 //        NSSize.convertFromStringLiteral(value: self.rawValue)
 //    }
+    public func getNSSize()->NSSize{
+        return NSSize.convertFromStringLiteral(value: self.toString())
+    }
     
     public func toString()->String{
         switch self {
