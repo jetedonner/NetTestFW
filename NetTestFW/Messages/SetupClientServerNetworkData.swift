@@ -10,7 +10,7 @@ import GameKit
 
 public class SetupClientServerNetworkData: BaseNetworkData {
     
-    var clientServerData:[String:HostType] = [:]
+    public var clientServerData:[String:HostType] = [:]
     
     public init(id:Int){
         super.init(id: id, msgType: .setupClientServerMsg)
