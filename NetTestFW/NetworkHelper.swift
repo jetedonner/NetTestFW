@@ -17,6 +17,10 @@ public class NetworkHelper: NSObject {
     
     let dbgMode:Bool = false
     
+    let decoder:JSONDecoder = JSONDecoder()
+    let encoder:JSONEncoder = JSONEncoder()
+    static let encoder:JSONEncoder = JSONEncoder()
+    
     var testData:BaseNetworkData!
     var testDataTurn:TurnNetworkData!
     var testDataInitLevel:LoadLevelNetworkData!
@@ -25,6 +29,10 @@ public class NetworkHelper: NSObject {
     
     public override init() {
         super.init()
+        
+    }
+    
+    public func testNetworkHelperAndData(){
 //        NetTestFWClass.sayHello()
         print("\n ===== NetTest START ===== ")
         print("\n ++++ BaseNetworkData ++++ ")
@@ -46,9 +54,10 @@ public class NetworkHelper: NSObject {
         print("\n =====  NetTest END  ===== \n")
     }
     
+    @discardableResult
     public func receiveAndDecode(data:Data)->BaseNetworkData{
         print("\n ----- DECODED ----- ")
-        let decoder:JSONDecoder = JSONDecoder()
+        
         let newObjectSuper:BaseNetworkData = try! decoder.decode(BaseNetworkData.self, from: data)
         print("newObjectSuper.id: \(newObjectSuper.id)")
         print("newObjectSuper.msgType: \(newObjectSuper.msgType)")
