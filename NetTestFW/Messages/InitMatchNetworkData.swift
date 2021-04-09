@@ -10,7 +10,7 @@ import Foundation
 public class InitMatchNetworkData: BaseNetworkData {
     
     public init(id:Int) {
-        super.init(id: id, msgType: .endMatchMsg)
+        super.init(id: id, msgType: .initMatchMsg)
     }
     
     public required init(from decoder: Decoder) throws {

@@ -85,6 +85,11 @@ public class NetworkHelper: NSObject {
             print("newObject.id: \(newObject.id)")
             print("newObject.msgType: \(newObject.msgType)")
             return newObject
+        }else if(newObjectSuper.msgType == .setupClientServerMsg){
+            let newObject:SetupClientServerNetworkData = try! decoder.decode(SetupClientServerNetworkData.self, from: data)
+            print("newObject.id: \(newObject.id)")
+            print("newObject.msgType: \(newObject.msgType)")
+            return newObject
         }
         return newObjectSuper
     }
