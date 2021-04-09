@@ -8,7 +8,6 @@
 import Foundation
 import GameKit
 
-
 public struct SuakePlayerObjNet:Codable  {
     public var playerId:String
     public var playerType:HostType
@@ -18,18 +17,18 @@ public struct SuakePlayerObjNet:Codable  {
 public class SetupClientServerNetworkData: BaseNetworkData {
     
     public var playerCount:Int = 0
-//    public var clientServerData:[String:HostType] = [:]
     public var clientServerData:[SuakePlayerObjNet] = [SuakePlayerObjNet]()
-    
     
     public init(id:Int){
         super.init(id: id, msgType: .setupClientServerMsg)
     }
     
-    public func addHost(playerId:String, hostType:HostType){
-//        self.clientServerData[playerId] = hostType
-        self.clientServerData.append(SuakePlayerObjNet(playerId: playerId, playerType: hostType, playerNum: self.playerCount))
+    @discardableResult
+    public func addHost(playerId:String, hostType:HostType)->SuakePlayerObjNet{
+        let objRet:SuakePlayerObjNet = SuakePlayerObjNet(playerId: playerId, playerType: hostType, playerNum: self.playerCount)
+        self.clientServerData.append(objRet)
         self.playerCount += 1
+        return objRet
     }
     
     private enum CodingKeys: String, CodingKey {
