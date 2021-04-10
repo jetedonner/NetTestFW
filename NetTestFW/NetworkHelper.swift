@@ -94,10 +94,12 @@ public class NetworkHelper: NSObject {
             let newObject:Ready4MatchNetworkData = try! decoder.decode(Ready4MatchNetworkData.self, from: data)
             print("newObject.id: \(newObject.id)")
             print("newObject.msgType: \(newObject.msgType)")
+            return newObject
         }else if(newObjectSuper.msgType == .startMatchMsg){
             let newObject:StartMatchNetworkData = try! decoder.decode(StartMatchNetworkData.self, from: data)
             print("newObject.id: \(newObject.id)")
             print("newObject.msgType: \(newObject.msgType)")
+            return newObject
         }
         return newObjectSuper
     }
