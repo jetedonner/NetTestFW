@@ -13,7 +13,7 @@ extension NetworkHelper{
         print(" ----- ENCODED ----- ")
         do{
             let encData:Data = try encoder.encode(netData)
-            if(self.dbgMode){
+            if(NetworkHelper.dbgMode){
                 encoder.outputFormatting = .prettyPrinted
                 print(String(data: encData, encoding: .utf8)!)
             }

@@ -19,6 +19,7 @@ public enum MsgType : UInt8, Codable{
     case turnMsg
     case initMatchMsg
     case endMatchMsg
+    case ready4MatchMsg
 }
 
 public enum TurnDir : UInt8, Codable{

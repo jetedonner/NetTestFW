@@ -15,7 +15,7 @@ extension Notification.Name {
 
 public class NetworkHelper: NSObject {
     
-    let dbgMode:Bool = false
+    public static let dbgMode:Bool = false
     
     let decoder:JSONDecoder = JSONDecoder()
     let encoder:JSONEncoder = JSONEncoder()
