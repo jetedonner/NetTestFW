@@ -17,7 +17,7 @@ public enum MsgType : UInt8, Codable{
     case setupClientServerMsg
     case initLevelMsg
     case turnMsg
-    case initMatchMsg
+    case startMatchMsg
     case endMatchMsg
     case ready4MatchMsg
 }

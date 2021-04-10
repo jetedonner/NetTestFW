@@ -24,7 +24,7 @@
 		55563E1A2617B7E200E89323 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563E192617B7E200E89323 /* Extensions.swift */; };
 		55563E452618E36100E89323 /* BaseNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563E412618E30600E89323 /* BaseNetworkData.swift */; };
 		55563E462618E36100E89323 /* EndMatchNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563E402618E30600E89323 /* EndMatchNetworkData.swift */; };
-		55C122192618EFBC001E8E3F /* InitMatchNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C122182618EFBC001E8E3F /* InitMatchNetworkData.swift */; };
+		55C122192618EFBC001E8E3F /* StartMatchNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C122182618EFBC001E8E3F /* StartMatchNetworkData.swift */; };
 		55C1222C261CAD1B001E8E3F /* LoadLevelNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1222B261CAD1B001E8E3F /* LoadLevelNetworkData.swift */; };
 		55C1223E261CD8E4001E8E3F /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1223D261CD8E4001E8E3F /* CGSizeExtension.swift */; };
 		55C1226F261E1CC0001E8E3F /* SuakeDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1226E261E1CC0001E8E3F /* SuakeDir.swift */; };
@@ -63,7 +63,7 @@
 		55563E192617B7E200E89323 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		55563E402618E30600E89323 /* EndMatchNetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndMatchNetworkData.swift; sourceTree = "<group>"; };
 		55563E412618E30600E89323 /* BaseNetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkData.swift; sourceTree = "<group>"; };
-		55C122182618EFBC001E8E3F /* InitMatchNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitMatchNetworkData.swift; sourceTree = "<group>"; };
+		55C122182618EFBC001E8E3F /* StartMatchNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartMatchNetworkData.swift; sourceTree = "<group>"; };
 		55C1222B261CAD1B001E8E3F /* LoadLevelNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadLevelNetworkData.swift; sourceTree = "<group>"; };
 		55C1223D261CD8E4001E8E3F /* CGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
 		55C1226E261E1CC0001E8E3F /* SuakeDir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuakeDir.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 				55563E402618E30600E89323 /* EndMatchNetworkData.swift */,
 				55EA0D162622317B00F412F9 /* Ready4MatchNetworkData.swift */,
 				55C12275261F7192001E8E3F /* SetupClientServerNetworkData.swift */,
-				55C122182618EFBC001E8E3F /* InitMatchNetworkData.swift */,
+				55C122182618EFBC001E8E3F /* StartMatchNetworkData.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 				55563E1A2617B7E200E89323 /* Extensions.swift in Sources */,
 				55563E0E2617B7D300E89323 /* SkyboxType.swift in Sources */,
 				55C1226F261E1CC0001E8E3F /* SuakeDir.swift in Sources */,
-				55C122192618EFBC001E8E3F /* InitMatchNetworkData.swift in Sources */,
+				55C122192618EFBC001E8E3F /* StartMatchNetworkData.swift in Sources */,
 				55563E002617B7BC00E89323 /* NetworkDataTypes.swift in Sources */,
 				55563E092617B7D300E89323 /* LevelSize.swift in Sources */,
 				55563E0C2617B7D300E89323 /* MatchDuration.swift in Sources */,
