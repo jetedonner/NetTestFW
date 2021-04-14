@@ -10,6 +10,7 @@ import GameKit
 
 public struct SuakePlayerObjNet:Codable  {
     public var playerId:String
+    public var playerName:String
     public var playerType:HostType
     public var playerNum:Int
 }
@@ -24,8 +25,8 @@ public class SetupClientServerNetworkData: BaseNetworkData {
     }
     
     @discardableResult
-    public func addHost(playerId:String, hostType:HostType)->SuakePlayerObjNet{
-        let objRet:SuakePlayerObjNet = SuakePlayerObjNet(playerId: playerId, playerType: hostType, playerNum: self.playerCount)
+    public func addHost(playerId:String, playerName:String, hostType:HostType)->SuakePlayerObjNet{
+        let objRet:SuakePlayerObjNet = SuakePlayerObjNet(playerId: playerId, playerName: playerName, playerType: hostType, playerNum: self.playerCount)
         self.clientServerData.append(objRet)
         self.playerCount += 1
         return objRet
