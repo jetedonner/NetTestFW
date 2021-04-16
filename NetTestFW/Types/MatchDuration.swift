@@ -11,6 +11,7 @@ import Foundation
 public enum MatchDuration:TimeInterval, Codable{
     case Infinite = 9999999999.99999
     case Seconds_10 = 10.0
+    case Seconds_20 = 20.0
     case Seconds_30 = 30.0
     case Seconds_45 = 45.0
     case Minute_1 = 60.0
@@ -28,6 +29,8 @@ public enum MatchDuration:TimeInterval, Codable{
             return  "Infinite ∞"
         case .Seconds_10:
             return  "10 seconds"
+        case .Seconds_20:
+            return  "20 seconds"
         case .Seconds_30:
             return  "30 seconds"
         case .Seconds_45:
@@ -55,6 +58,10 @@ public enum MatchDuration:TimeInterval, Codable{
         switch fromString {
         case "Infinite ∞":
             return .Infinite
+        case "10 Seconds":
+            return .Seconds_10
+        case "20 Seconds":
+            return .Seconds_20
         case "30 Seconds":
             return .Seconds_30
         case "1 Minute":

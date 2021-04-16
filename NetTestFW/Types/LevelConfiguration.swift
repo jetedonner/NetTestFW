@@ -22,6 +22,8 @@ public struct LevelSetup: Codable{
 
 public struct LevelPlayers: Codable{
     public var humanPlayerCount:Int =  2
+    public var humanPlayers:[String:String] = [:]
+    
     public var aiPlayerCount:Int =     0
     public var droidPlayerCount:Int =  0
 }
@@ -44,10 +46,13 @@ public class LevelConfiguration: NSObject, Codable {
     
     public var levelSetup:LevelSetup = LevelSetup()
     
-    public init(levelEnv:LevelEnvironment, levelPLayers:LevelPlayers, levelSetup:LevelSetup) {
+    public var levelClientServer:[SuakePlayerObjNet] = [SuakePlayerObjNet]()
+    
+    public init(levelEnv:LevelEnvironment, levelPLayers:LevelPlayers, levelSetup:LevelSetup, levelClientServer:[SuakePlayerObjNet]) {
         super.init()
         self.levelEnv = levelEnv
         self.levelPlayers = levelPLayers
         self.levelSetup = levelSetup
+        self.levelClientServer = levelClientServer
     }
 }
