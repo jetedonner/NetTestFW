@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum FloorType:Int, Codable {
+public enum FloorType:Int, CaseIterable, Codable {
     case Sand =  1 //"art.scnassets/textures/floors/desert_sand_floor_512x512.png"
     case Grass = 2 //"art.scnassets/textures/floors/grass_floor_512x512.png"
     case Space = 3 //"art.scnassets/textures/floors/space_glowing_plate_floor_512x512.png"
@@ -22,6 +22,7 @@ public enum FloorType:Int, Codable {
     case RandomFloor = 10 //"A random floor texture"
     
     public func toString()->String{
+//        ^
         switch self {
         case .Sand:
             return "art.scnassets/textures/floors/desert_sand_floor_512x512.png"
