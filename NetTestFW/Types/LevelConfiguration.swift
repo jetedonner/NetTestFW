@@ -8,16 +8,40 @@
 import Foundation
 import SceneKit
 
+public struct SuakePosDir: Codable{
+    public var pos:SCNVector3 = SCNVector3(0, 0, 0)
+    public var dir:SuakeDir = .UP
+}
+
 public struct LevelSetup: Codable{
-    public var playerPos:[SCNVector3] = [SCNVector3(0, 0, 0), SCNVector3(-2, 0, 2)]
-    public var playerDir:[SuakeDir] = [.UP, .DOWN]
+    
+    public var humanPlayerPosDir:[SuakePosDir] = [SuakePosDir(pos: SCNVector3(0, 0, 0), dir: .UP), SuakePosDir(pos: SCNVector3(-2, 0, 2), dir: .DOWN)]
+    
+    public var loadAISuake:Bool = false
+    public var aiPlayerPosDir:[SuakePosDir] = [SuakePosDir]()
+    
+    public var loadDroids:Bool = false
+    public var droidsAttackOwn:Bool = false
+    public var droidsAttackOpp:Bool = false
+//    var droidCount:Int = 0
+    public var droidPosDir:[SuakePosDir] = [SuakePosDir(pos: SCNVector3(3, 0, 3), dir: .DOWN)]
     
     public var goodyPos:SCNVector3 = SCNVector3(-3, 0, 3)
-//    public var droidsPos:[SCNVector3] = [SCNVector3]()
     
     public var medKitPos:[SCNVector3] = [SCNVector3(-2, 0, 5), SCNVector3(-7, 0, 7), SCNVector3(3, 0, -2)] //= [SCNVector3]()
     
+    public var loadWeaponPickups:Bool = true
     public var mgPickupPos:SCNVector3 = SCNVector3(2, 0, 3)
+    
+    public var showCountdown:Bool = true
+    
+    
+    //TMP remove before release build
+//    var testOppSuakeAI:Bool = false
+    
+//    var loadPortals:Bool = false
+//    var portalCount:Int = 0
+    
 }
 
 public struct LevelPlayers: Codable{
@@ -26,6 +50,9 @@ public struct LevelPlayers: Codable{
     
     public var aiPlayerCount:Int =     0
     public var droidPlayerCount:Int =  0
+    public var loadDroids:Bool{
+        get{ return self.droidPlayerCount > 0 }
+    }
 }
 
 public struct LevelEnvironment: Codable{
@@ -36,6 +63,15 @@ public struct LevelEnvironment: Codable{
     public var matchDuration:MatchDuration = .Minutes_2
     public var levelDifficulty:LevelDifficulty = .Easy
     public var lightIntensity:LightIntensity = .normal
+    
+    public init(levelSize:LevelSize, floorType:FloorType, skyBoxType:SkyboxType, matchDuration:MatchDuration, levelDifficulty:LevelDifficulty, lightIntensity:LightIntensity){
+        self.levelSize = levelSize
+        self.floorType = floorType
+        self.skyBoxType = skyBoxType
+        self.matchDuration = matchDuration
+        self.levelDifficulty = levelDifficulty
+        self.lightIntensity = lightIntensity
+    }
 }
 
 public class LevelConfiguration: NSObject, Codable {
@@ -47,6 +83,10 @@ public class LevelConfiguration: NSObject, Codable {
     public var levelSetup:LevelSetup = LevelSetup()
     
     public var levelClientServer:[SuakePlayerObjNet] = [SuakePlayerObjNet]()
+    
+    public override init() {
+        super.init()
+    }
     
     public init(levelEnv:LevelEnvironment, levelPLayers:LevelPlayers, levelSetup:LevelSetup, levelClientServer:[SuakePlayerObjNet]) {
         super.init()
