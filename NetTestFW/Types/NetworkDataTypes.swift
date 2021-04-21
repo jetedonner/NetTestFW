@@ -19,6 +19,7 @@ public enum MsgType : UInt8, Codable{
     case turnMsg
     case startMatchMsg
     case endMatchMsg
+    case shootWeaponMsg
     case ready4MatchMsg
 }
 
