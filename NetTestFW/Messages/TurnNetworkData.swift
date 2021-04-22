@@ -19,6 +19,12 @@ public class TurnNetworkData: BaseNetworkData {
         self.position = SCNVector3(-6, 0, 3)
     }
     
+    public init(id:Int, turnDir:TurnDir){
+        super.init(id: id, msgType: .turnMsg)
+        self.turnDir = turnDir
+        self.position = SCNVector3(-6, 0, 3)
+    }
+    
     private enum CodingKeys: String, CodingKey {
         case turnDir
         case position
