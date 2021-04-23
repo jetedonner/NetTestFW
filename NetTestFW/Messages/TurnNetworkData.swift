@@ -13,10 +13,10 @@ public class TurnNetworkData: BasePlayerNetworkData {
     public var turnDir:TurnDir = .Straight
     public var position:SCNVector3 = SCNVector3(1, 0, -8)
     
-    public init(id:Int, turnDir:TurnDir, playerId:String){
+    public init(id:Int, turnDir:TurnDir, position:SCNVector3, playerId:String){
         super.init(id: id, msgType: .turnMsg, playerId: playerId)
         self.turnDir = turnDir
-        self.position = SCNVector3(-6, 0, 3)
+        self.position = position
     }
     
     private enum CodingKeys: String, CodingKey {

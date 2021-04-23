@@ -40,7 +40,7 @@ public class NetworkHelper: NSObject {
         self.receiveAndDecode(data: self.encodeAndSend(netData: self.testData)!)
         
         print("\n ++++ TurnNetworkData ++++ ")
-        self.testDataTurn = TurnNetworkData(id: 2, turnDir: .Straight, playerId: "TEST-PLAYER-ID")
+        self.testDataTurn = TurnNetworkData(id: 2, turnDir: .Straight, position: SCNVector3(0, 0, 0), playerId: "TEST-PLAYER-ID")
         self.receiveAndDecode(data: self.encodeAndSend(netData: self.testDataTurn)!)
         
         print("\n ++++ LoadLevelNetworkData ++++ ")
