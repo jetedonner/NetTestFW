@@ -21,7 +21,30 @@ public class PickedUpNetworkData: BaseNetworkData {
         self.newPos = newPos
     }
     
-    public required init(from decoder: Decoder) throws {
-        try super.init(from: decoder)
+    private enum CodingKeys: String, CodingKey {
+        case itemType
+        case value
+        case newPos
     }
+
+    public required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        try super.init(from: decoder)
+        self.itemType = try container.decode(SuakeFieldType.self, forKey: .itemType)
+        self.value = try container.decode(CGFloat.self, forKey: .value)
+        self.newPos = try container.decode(SCNVector3.self, forKey: .newPos)
+    }
+
+    public override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(self.itemType, forKey: .itemType)
+        try container.encode(self.value, forKey: .value)
+        try container.encode(self.newPos, forKey: .newPos)
+        
+        try super.encode(to: encoder)
+    }
+    
+//    public required init(from decoder: Decoder) throws {
+//        try super.init(from: decoder)
+//    }
 }
