@@ -30,6 +30,7 @@
 		55563E1A2617B7E200E89323 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563E192617B7E200E89323 /* Extensions.swift */; };
 		55563E452618E36100E89323 /* BaseNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563E412618E30600E89323 /* BaseNetworkData.swift */; };
 		55563E462618E36100E89323 /* EndMatchNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563E402618E30600E89323 /* EndMatchNetworkData.swift */; };
+		555B838426333867002AFB2C /* DroidDirNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B838326333867002AFB2C /* DroidDirNetworkData.swift */; };
 		55C122192618EFBC001E8E3F /* StartMatchNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C122182618EFBC001E8E3F /* StartMatchNetworkData.swift */; };
 		55C1222C261CAD1B001E8E3F /* LoadLevelNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1222B261CAD1B001E8E3F /* LoadLevelNetworkData.swift */; };
 		55C1223E261CD8E4001E8E3F /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1223D261CD8E4001E8E3F /* CGSizeExtension.swift */; };
@@ -75,6 +76,7 @@
 		55563E192617B7E200E89323 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		55563E402618E30600E89323 /* EndMatchNetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndMatchNetworkData.swift; sourceTree = "<group>"; };
 		55563E412618E30600E89323 /* BaseNetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkData.swift; sourceTree = "<group>"; };
+		555B838326333867002AFB2C /* DroidDirNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroidDirNetworkData.swift; sourceTree = "<group>"; };
 		55C122182618EFBC001E8E3F /* StartMatchNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartMatchNetworkData.swift; sourceTree = "<group>"; };
 		55C1222B261CAD1B001E8E3F /* LoadLevelNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadLevelNetworkData.swift; sourceTree = "<group>"; };
 		55C1223D261CD8E4001E8E3F /* CGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
@@ -183,11 +185,10 @@
 			isa = PBXGroup;
 			children = (
 				5542340E2632D74B00EB55F9 /* Base */,
+				555B8380263319FB002AFB2C /* Setup */,
+				555B837F263319E7002AFB2C /* Move */,
 				5542340D2632D74100EB55F9 /* PickUp */,
-				55C1222B261CAD1B001E8E3F /* LoadLevelNetworkData.swift */,
-				55563DFC2617B7BC00E89323 /* TurnNetworkData.swift */,
 				55563E402618E30600E89323 /* EndMatchNetworkData.swift */,
-				5508DC8426303B0D00A20444 /* ShootWeaponNetworkData.swift */,
 				55EA0D162622317B00F412F9 /* Ready4MatchNetworkData.swift */,
 				55C12275261F7192001E8E3F /* SetupClientServerNetworkData.swift */,
 				55C122182618EFBC001E8E3F /* StartMatchNetworkData.swift */,
@@ -202,6 +203,24 @@
 				55563E192617B7E200E89323 /* Extensions.swift */,
 			);
 			path = System;
+			sourceTree = "<group>";
+		};
+		555B837F263319E7002AFB2C /* Move */ = {
+			isa = PBXGroup;
+			children = (
+				55563DFC2617B7BC00E89323 /* TurnNetworkData.swift */,
+				555B838326333867002AFB2C /* DroidDirNetworkData.swift */,
+				5508DC8426303B0D00A20444 /* ShootWeaponNetworkData.swift */,
+			);
+			path = Move;
+			sourceTree = "<group>";
+		};
+		555B8380263319FB002AFB2C /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				55C1222B261CAD1B001E8E3F /* LoadLevelNetworkData.swift */,
+			);
+			path = Setup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +341,7 @@
 				554234102632D77800EB55F9 /* PickedUpNetworkData.swift in Sources */,
 				55563DEC2617B79F00E89323 /* NetworkHelperExt.swift in Sources */,
 				55C1223E261CD8E4001E8E3F /* CGSizeExtension.swift in Sources */,
+				555B838426333867002AFB2C /* DroidDirNetworkData.swift in Sources */,
 				55563DFF2617B7BC00E89323 /* TurnNetworkData.swift in Sources */,
 				55563E0B2617B7D300E89323 /* FloorType.swift in Sources */,
 				55563E062617B7CB00E89323 /* LevelConfiguration.swift in Sources */,
