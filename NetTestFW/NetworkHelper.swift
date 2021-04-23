@@ -100,6 +100,11 @@ public class NetworkHelper: NSObject {
             print("newObject.id: \(newObject.id)")
             print("newObject.msgType: \(newObject.msgType)")
             return newObject
+        }else if(newObjectSuper.msgType == .pickedUpMsg){
+            let newObject:PickedUpNetworkData = try! decoder.decode(PickedUpNetworkData.self, from: data)
+            print("newObject.id: \(newObject.id)")
+            print("newObject.msgType: \(newObject.msgType)")
+            return newObject
         }else if(newObjectSuper.msgType == .shootWeaponMsg){
             let newObject:ShootWeaponNetworkData = try! decoder.decode(ShootWeaponNetworkData.self, from: data)
             print("newObject.id: \(newObject.id)")

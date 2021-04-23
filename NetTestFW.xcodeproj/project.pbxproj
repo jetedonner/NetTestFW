@@ -10,6 +10,8 @@
 		5508DC8526303B0D00A20444 /* ShootWeaponNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508DC8426303B0D00A20444 /* ShootWeaponNetworkData.swift */; };
 		5508DC8926303B6800A20444 /* WeaponType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508DC8826303B6800A20444 /* WeaponType.swift */; };
 		550EA36C2631FFCA007E5ED0 /* BasePlayerNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550EA36B2631FFCA007E5ED0 /* BasePlayerNetworkData.swift */; };
+		554234102632D77800EB55F9 /* PickedUpNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542340F2632D77800EB55F9 /* PickedUpNetworkData.swift */; };
+		554234142632D7EF00EB55F9 /* SuakeFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554234132632D7EF00EB55F9 /* SuakeFieldType.swift */; };
 		55563D732616796A00E89323 /* NetTestFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55563D692616796A00E89323 /* NetTestFW.framework */; };
 		55563D782616796A00E89323 /* NetTestFWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563D772616796A00E89323 /* NetTestFWTests.swift */; };
 		55563D7A2616796A00E89323 /* NetTestFW.h in Headers */ = {isa = PBXBuildFile; fileRef = 55563D6C2616796A00E89323 /* NetTestFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,6 +51,8 @@
 		5508DC8426303B0D00A20444 /* ShootWeaponNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootWeaponNetworkData.swift; sourceTree = "<group>"; };
 		5508DC8826303B6800A20444 /* WeaponType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponType.swift; sourceTree = "<group>"; };
 		550EA36B2631FFCA007E5ED0 /* BasePlayerNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePlayerNetworkData.swift; sourceTree = "<group>"; };
+		5542340F2632D77800EB55F9 /* PickedUpNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickedUpNetworkData.swift; sourceTree = "<group>"; };
+		554234132632D7EF00EB55F9 /* SuakeFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuakeFieldType.swift; sourceTree = "<group>"; };
 		55563D692616796A00E89323 /* NetTestFW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetTestFW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55563D6C2616796A00E89323 /* NetTestFW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetTestFW.h; sourceTree = "<group>"; };
 		55563D6D2616796A00E89323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +100,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5542340D2632D74100EB55F9 /* PickUp */ = {
+			isa = PBXGroup;
+			children = (
+				5542340F2632D77800EB55F9 /* PickedUpNetworkData.swift */,
+			);
+			path = PickUp;
+			sourceTree = "<group>";
+		};
+		5542340E2632D74B00EB55F9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				55563E412618E30600E89323 /* BaseNetworkData.swift */,
+				550EA36B2631FFCA007E5ED0 /* BasePlayerNetworkData.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		55563D5F2616796A00E89323 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +161,7 @@
 		55563E3C2618E2DA00E89323 /* Types */ = {
 			isa = PBXGroup;
 			children = (
+				5508DC8826303B6800A20444 /* WeaponType.swift */,
 				55563DFE2617B7BC00E89323 /* NetworkDataTypes.swift */,
 				55563DF92617B7BC00E89323 /* LevelConfiguration.swift */,
 				55563DF42617B7BC00E89323 /* SkyboxType.swift */,
@@ -149,6 +171,7 @@
 				55563DF82617B7BC00E89323 /* FloorType.swift */,
 				55563DFA2617B7BC00E89323 /* LevelDifficulty.swift */,
 				55C1226E261E1CC0001E8E3F /* SuakeDir.swift */,
+				554234132632D7EF00EB55F9 /* SuakeFieldType.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -156,9 +179,8 @@
 		55563E3F2618E2EC00E89323 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
-				5508DC8826303B6800A20444 /* WeaponType.swift */,
-				55563E412618E30600E89323 /* BaseNetworkData.swift */,
-				550EA36B2631FFCA007E5ED0 /* BasePlayerNetworkData.swift */,
+				5542340E2632D74B00EB55F9 /* Base */,
+				5542340D2632D74100EB55F9 /* PickUp */,
 				55C1222B261CAD1B001E8E3F /* LoadLevelNetworkData.swift */,
 				55563DFC2617B7BC00E89323 /* TurnNetworkData.swift */,
 				55563E402618E30600E89323 /* EndMatchNetworkData.swift */,
@@ -290,9 +312,11 @@
 			files = (
 				55563E452618E36100E89323 /* BaseNetworkData.swift in Sources */,
 				5508DC8926303B6800A20444 /* WeaponType.swift in Sources */,
+				554234142632D7EF00EB55F9 /* SuakeFieldType.swift in Sources */,
 				55C1222C261CAD1B001E8E3F /* LoadLevelNetworkData.swift in Sources */,
 				55563E462618E36100E89323 /* EndMatchNetworkData.swift in Sources */,
 				5508DC8526303B0D00A20444 /* ShootWeaponNetworkData.swift in Sources */,
+				554234102632D77800EB55F9 /* PickedUpNetworkData.swift in Sources */,
 				55563DEC2617B79F00E89323 /* NetworkHelperExt.swift in Sources */,
 				55C1223E261CD8E4001E8E3F /* CGSizeExtension.swift in Sources */,
 				55563DFF2617B7BC00E89323 /* TurnNetworkData.swift in Sources */,
