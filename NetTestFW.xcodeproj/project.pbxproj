@@ -12,6 +12,7 @@
 		550EA36C2631FFCA007E5ED0 /* BasePlayerNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550EA36B2631FFCA007E5ED0 /* BasePlayerNetworkData.swift */; };
 		554234102632D77800EB55F9 /* PickedUpNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5542340F2632D77800EB55F9 /* PickedUpNetworkData.swift */; };
 		554234142632D7EF00EB55F9 /* SuakeFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554234132632D7EF00EB55F9 /* SuakeFieldType.swift */; };
+		554234182632E27C00EB55F9 /* HitByBulletNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554234172632E27C00EB55F9 /* HitByBulletNetworkData.swift */; };
 		55563D732616796A00E89323 /* NetTestFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55563D692616796A00E89323 /* NetTestFW.framework */; };
 		55563D782616796A00E89323 /* NetTestFWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55563D772616796A00E89323 /* NetTestFWTests.swift */; };
 		55563D7A2616796A00E89323 /* NetTestFW.h in Headers */ = {isa = PBXBuildFile; fileRef = 55563D6C2616796A00E89323 /* NetTestFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,6 +54,7 @@
 		550EA36B2631FFCA007E5ED0 /* BasePlayerNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePlayerNetworkData.swift; sourceTree = "<group>"; };
 		5542340F2632D77800EB55F9 /* PickedUpNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickedUpNetworkData.swift; sourceTree = "<group>"; };
 		554234132632D7EF00EB55F9 /* SuakeFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuakeFieldType.swift; sourceTree = "<group>"; };
+		554234172632E27C00EB55F9 /* HitByBulletNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitByBulletNetworkData.swift; sourceTree = "<group>"; };
 		55563D692616796A00E89323 /* NetTestFW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetTestFW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55563D6C2616796A00E89323 /* NetTestFW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetTestFW.h; sourceTree = "<group>"; };
 		55563D6D2616796A00E89323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				5542340F2632D77800EB55F9 /* PickedUpNetworkData.swift */,
+				554234172632E27C00EB55F9 /* HitByBulletNetworkData.swift */,
 			);
 			path = PickUp;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				55C122192618EFBC001E8E3F /* StartMatchNetworkData.swift in Sources */,
 				55563E002617B7BC00E89323 /* NetworkDataTypes.swift in Sources */,
 				55563E092617B7D300E89323 /* LevelSize.swift in Sources */,
+				554234182632E27C00EB55F9 /* HitByBulletNetworkData.swift in Sources */,
 				55563E0C2617B7D300E89323 /* MatchDuration.swift in Sources */,
 				55563E0D2617B7D300E89323 /* LevelDifficulty.swift in Sources */,
 				55C12276261F7192001E8E3F /* SetupClientServerNetworkData.swift in Sources */,

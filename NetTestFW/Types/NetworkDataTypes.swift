@@ -22,6 +22,7 @@ public enum MsgType : UInt8, Codable{
     case shootWeaponMsg
     case ready4MatchMsg
     case pickedUpMsg
+    case hitByBulletMsg
 }
 
 public enum TurnDir : UInt8, Codable{
