@@ -26,7 +26,7 @@ public class LoadLevelNetworkData: BaseNetworkData {
     public init(id: Int) {
         super.init(id: id, msgType: .initLevelMsg)
         
-        self.levelConfig = LevelConfiguration(levelEnv: LevelEnvironment(levelSize: .Small, floorType: .Debug, skyBoxType: .RedGalaxy, matchDuration: .Minute_1, levelDifficulty: .Easy, lightIntensity: .normal), levelPLayers: players, levelSetup: LevelSetup(), levelClientServer: levelClientServer)
+        self.levelConfig = LevelConfiguration(levelEnv: LevelEnvironment(levelSize: .Small, floorType: .Debug, skyBoxType: .RedGalaxy, matchDuration: .Seconds_20, levelDifficulty: .Easy, lightIntensity: .normal), levelPLayers: players, levelSetup: LevelSetup(), levelClientServer: levelClientServer)
     }
     
     private enum CodingKeys: String, CodingKey {
