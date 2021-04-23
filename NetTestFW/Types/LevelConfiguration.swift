@@ -11,6 +11,11 @@ import SceneKit
 public struct SuakePosDir: Codable{
     public var pos:SCNVector3 = SCNVector3(0, 0, 0)
     public var dir:SuakeDir = .UP
+    
+    public init(pos:SCNVector3, dir:SuakeDir){
+        self.pos = pos
+        self.dir = dir
+    }
 }
 
 public struct LevelSetup: Codable{
