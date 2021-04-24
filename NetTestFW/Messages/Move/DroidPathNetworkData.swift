@@ -16,7 +16,7 @@ public class DroidPathNetworkData: BasePlayerNetworkData {
     public var path:[SuakeBaseGridGraphNode] = [SuakeBaseGridGraphNode]()
     
     public init(id:Int, path:[SuakeBaseGridGraphNode], position:SCNVector3, playerId:String){
-        super.init(id: id, msgType: .droidDirMsg, playerId: playerId)
+        super.init(id: id, msgType: .droidPathMsg, playerId: playerId)
         self.path = path
         self.position = position
     }

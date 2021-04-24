@@ -14,7 +14,7 @@ public class DroidDirNetworkData: BasePlayerNetworkData {
     public var position:SCNVector3 = SCNVector3(1, 0, -8)
     
     public init(id:Int, nextDir:SuakeDir, position:SCNVector3, playerId:String){
-        super.init(id: id, msgType: .droidDirMsg, playerId: playerId)
+        super.init(id: id, msgType: .droidPathMsg, playerId: playerId)
         self.nextDir = nextDir
         self.position = position
     }

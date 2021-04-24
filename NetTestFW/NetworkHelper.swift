@@ -75,9 +75,9 @@ public class NetworkHelper: NSObject {
             print("newObject.turnDir: \(newObject.turnDir)")
             print("newObject.position: \(newObject.position)")
             return newObject
-        }else if(newObjectSuper.msgType == .droidDirMsg){
-            let newObject:DroidDirNetworkData = try! decoder.decode(DroidDirNetworkData.self, from: data)
-            print("newObject.turnDir: \(newObject.nextDir)")
+        }else if(newObjectSuper.msgType == .droidPathMsg){
+            let newObject:DroidPathNetworkData = try! decoder.decode(DroidPathNetworkData.self, from: data)
+//            print("newObject.turnDir: \(newObject.nextDir)")
             print("newObject.position: \(newObject.position)")
             return newObject
         }else if(newObjectSuper.msgType == .initMsg){

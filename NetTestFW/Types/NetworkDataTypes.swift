@@ -17,7 +17,7 @@ public enum MsgType : UInt8, Codable{
     case setupClientServerMsg
     case initLevelMsg
     case turnMsg
-    case droidDirMsg
+    case droidPathMsg
     case startMatchMsg
     case endMatchMsg
     case shootWeaponMsg
