@@ -36,6 +36,8 @@
 		55C1223E261CD8E4001E8E3F /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1223D261CD8E4001E8E3F /* CGSizeExtension.swift */; };
 		55C1226F261E1CC0001E8E3F /* SuakeDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1226E261E1CC0001E8E3F /* SuakeDir.swift */; };
 		55C12276261F7192001E8E3F /* SetupClientServerNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C12275261F7192001E8E3F /* SetupClientServerNetworkData.swift */; };
+		55E9EA3A26335A8F005E3256 /* DroidPathNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9EA3926335A8F005E3256 /* DroidPathNetworkData.swift */; };
+		55E9EA3E26335D05005E3256 /* SuakeBaseGridGraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9EA3D26335D05005E3256 /* SuakeBaseGridGraphNode.swift */; };
 		55EA0D172622317B00F412F9 /* Ready4MatchNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA0D162622317B00F412F9 /* Ready4MatchNetworkData.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		55C1223D261CD8E4001E8E3F /* CGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
 		55C1226E261E1CC0001E8E3F /* SuakeDir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuakeDir.swift; sourceTree = "<group>"; };
 		55C12275261F7192001E8E3F /* SetupClientServerNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupClientServerNetworkData.swift; sourceTree = "<group>"; };
+		55E9EA3926335A8F005E3256 /* DroidPathNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroidPathNetworkData.swift; sourceTree = "<group>"; };
+		55E9EA3D26335D05005E3256 /* SuakeBaseGridGraphNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuakeBaseGridGraphNode.swift; sourceTree = "<group>"; };
 		55EA0D162622317B00F412F9 /* Ready4MatchNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ready4MatchNetworkData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +170,7 @@
 		55563E3C2618E2DA00E89323 /* Types */ = {
 			isa = PBXGroup;
 			children = (
+				55E9EA3D26335D05005E3256 /* SuakeBaseGridGraphNode.swift */,
 				5508DC8826303B6800A20444 /* WeaponType.swift */,
 				55563DFE2617B7BC00E89323 /* NetworkDataTypes.swift */,
 				55563DF92617B7BC00E89323 /* LevelConfiguration.swift */,
@@ -210,6 +215,7 @@
 			children = (
 				55563DFC2617B7BC00E89323 /* TurnNetworkData.swift */,
 				555B838326333867002AFB2C /* DroidDirNetworkData.swift */,
+				55E9EA3926335A8F005E3256 /* DroidPathNetworkData.swift */,
 				5508DC8426303B0D00A20444 /* ShootWeaponNetworkData.swift */,
 			);
 			path = Move;
@@ -340,6 +346,8 @@
 				5508DC8526303B0D00A20444 /* ShootWeaponNetworkData.swift in Sources */,
 				554234102632D77800EB55F9 /* PickedUpNetworkData.swift in Sources */,
 				55563DEC2617B79F00E89323 /* NetworkHelperExt.swift in Sources */,
+				55E9EA3A26335A8F005E3256 /* DroidPathNetworkData.swift in Sources */,
+				55E9EA3E26335D05005E3256 /* SuakeBaseGridGraphNode.swift in Sources */,
 				55C1223E261CD8E4001E8E3F /* CGSizeExtension.swift in Sources */,
 				555B838426333867002AFB2C /* DroidDirNetworkData.swift in Sources */,
 				55563DFF2617B7BC00E89323 /* TurnNetworkData.swift in Sources */,
