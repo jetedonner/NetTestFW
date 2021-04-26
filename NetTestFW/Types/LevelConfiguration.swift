@@ -36,6 +36,8 @@ public struct LevelSetup: Codable{
     public var medKitPos:[SCNVector3] = [SCNVector3(-2, 0, 5), SCNVector3(-7, 0, 7), SCNVector3(3, 0, -2)] //= [SCNVector3]()
     
     public var loadWeaponPickups:Bool = true
+    public var loadObstacles:Bool = true
+    
     public var mgPickupPos:SCNVector3 = SCNVector3(2, 0, 3)
     
     public var showCountdown:Bool = true
