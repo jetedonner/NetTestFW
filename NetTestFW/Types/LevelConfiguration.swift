@@ -37,6 +37,7 @@ public struct LevelSetup: Codable{
     
     public var loadWeaponPickups:Bool = true
     public var loadObstacles:Bool = true
+    public var loadPortals:Bool = true
     
     public var mgPickupPos:SCNVector3 = SCNVector3(2, 0, 3)
     
