@@ -37,6 +37,7 @@ public struct LevelSetup: Codable{
     
     public var loadWeaponPickups:Bool = true
     public var loadObstacles:Bool = true
+    public var obstacleCount:Int = 5
     public var loadPortals:Bool = true
     
     public var mgPickupPos:SCNVector3 = SCNVector3(2, 0, 3)
@@ -71,14 +72,18 @@ public struct LevelEnvironment: Codable{
     public var matchDuration:MatchDuration = .Minutes_2
     public var levelDifficulty:LevelDifficulty = .Easy
     public var lightIntensity:LightIntensity = .normal
+    public var showTVMonitors:Bool = true
     
-    public init(levelSize:LevelSize, floorType:FloorType, skyBoxType:SkyboxType, matchDuration:MatchDuration, levelDifficulty:LevelDifficulty, lightIntensity:LightIntensity){
+    
+    
+    public init(levelSize:LevelSize, floorType:FloorType, skyBoxType:SkyboxType, matchDuration:MatchDuration, levelDifficulty:LevelDifficulty, lightIntensity:LightIntensity, showTVMonitors:Bool = true){
         self.levelSize = levelSize
         self.floorType = floorType
         self.skyBoxType = skyBoxType
         self.matchDuration = matchDuration
         self.levelDifficulty = levelDifficulty
         self.lightIntensity = lightIntensity
+        self.showTVMonitors = showTVMonitors
     }
 }
 

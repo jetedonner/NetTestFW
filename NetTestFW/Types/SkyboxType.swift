@@ -41,7 +41,8 @@ public enum SkyboxType:Int, Codable {
     
     public static func getSkybox(type:SkyboxType)->[String]{
         if(type == .RedGalaxy){
-            return ["SkyRed_left_1024x1024", "SkyRed_right_1024x1024", "SkyRed_top_1024x1024", "SkyRed_bottom_1024x1024", "SkyRed_back_1024x1024", "SkyRed_front_1024x1024"]
+//            return ["SkyRed_left_1024x1024", "SkyRed_right_1024x1024", "SkyRed_top_1024x1024", "SkyRed_bottom_1024x1024", "SkyRed_back_1024x1024", "SkyRed_front_1024x1024"]
+            return ["SkyRed_right_1024x1024", "SkyRed_left_1024x1024", "SkyRed_bottom_1024x1024", "SkyRed_top_1024x1024",  "SkyRed_front_1024x1024", "SkyRed_back_1024x1024"]
         }else if(type == .YellowGalaxy){
             return ["SkyYellow_left_1024x1024", "SkyYellow_right_1024x1024", "SkyYellow_top_1024x1024", "SkyYellow_bottom_1024x1024", "SkyYellow_back_1024x1024", "SkyYellow_front_1024x1024"]
         }else if(type == .PinkSunrise){
