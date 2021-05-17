@@ -65,7 +65,7 @@ public struct LevelPlayers: Codable{
 }
 
 public struct LevelEnvironment: Codable{
-    public var levelSize:LevelSize =   .ExtraSmall
+    public var levelSize:LevelSize =   .ExtraSmall // LevelSize(levelSize: .ExtraSmall)//  .ExtraSmall
     public var floorType:FloorType =   .Metallic
     public var skyBoxType:SkyboxType = .GreenSky
     
@@ -77,7 +77,7 @@ public struct LevelEnvironment: Codable{
     
     
     public init(levelSize:LevelSize, floorType:FloorType, skyBoxType:SkyboxType, matchDuration:MatchDuration, levelDifficulty:LevelDifficulty, lightIntensity:LightIntensity, showTVMonitors:Bool = true){
-        self.levelSize = levelSize
+        self.levelSize = levelSize //LevelSize(levelSize: levelSize)
         self.floorType = floorType
         self.skyBoxType = skyBoxType
         self.matchDuration = matchDuration

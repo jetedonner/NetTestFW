@@ -7,6 +7,19 @@
 
 import Foundation
 
+//public struct LevelSize:Codable{
+//    var levelSize:SuakeLevelSize = .Small
+//
+//    var rawLevelSize:CGSize{
+//        get{ return self.levelSize.getNSSize() }
+//    }
+//
+//    init(levelSize:SuakeLevelSize) {
+//        self.levelSize = levelSize
+//    }
+//}
+
+//public enum SuakeLevelSize:Int, Codable {
 public enum LevelSize:Int, Codable {
     case ExtraSmall = 1//  "10,10"
     case Small =      2//  "20,20"
@@ -15,6 +28,7 @@ public enum LevelSize:Int, Codable {
     case VeryBig =    5//  "50,50"
     case Huge =       6//  "70,70"
 
+//    var rawSize:CGSize = CGSize(width: 20, height: 20)
 //    func getNSSize()->NSSize{
 //        NSSize.convertFromStringLiteral(value: self.rawValue)
 //    }
